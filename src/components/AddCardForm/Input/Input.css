@@ -1,0 +1,45 @@
+.input-field-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.input-field-wrapper label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.8em;
+}
+
+.input-field-wrapper input,
+.input-field-wrapper select {
+  border: 1px solid #c8c8c8;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.input-field-wrapper input::-webkit-input-placeholder,
+.input-field-wrapper select::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.input-field-wrapper input:-ms-input-placeholder,
+.input-field-wrapper select:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.input-field-wrapper input::-ms-input-placeholder,
+.input-field-wrapper select::-ms-input-placeholder {
+  font-size: 14px;
+}
+
+.input-field-wrapper input::placeholder,
+.input-field-wrapper select::placeholder {
+  font-size: 14px;
+}
+/*# sourceMappingURL=Input.css.map */

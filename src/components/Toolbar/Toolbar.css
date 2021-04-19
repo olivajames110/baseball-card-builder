@@ -1,0 +1,60 @@
+.toolbar-container {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.toolbar-container .logo-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.toolbar-container .logo-wrapper svg {
+  display: block;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.toolbar-container h1 {
+  text-align: center;
+}
+
+.add-card-button-wrapper {
+  z-index: 1111;
+  display: block;
+  margin-top: 15px;
+}
+
+.add-card-button-wrapper button {
+  margin: 0 auto;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: var(--mlbBlue);
+  color: #ffffff;
+  border: none;
+  height: 46px;
+  width: 190px;
+  border-radius: 70px;
+  -webkit-transition: 140ms;
+  transition: 140ms;
+}
+
+.add-card-button-wrapper button:hover {
+  background-color: #060664;
+}
+
+.add-card-button-wrapper button svg {
+  margin-left: 10px;
+  height: 15px;
+  color: #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=Toolbar.css.map */

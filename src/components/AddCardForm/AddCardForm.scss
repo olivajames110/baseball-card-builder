@@ -1,0 +1,154 @@
+.add-card-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px 0px;
+	.card-preview {
+		position: relative;
+		margin: 0 auto;
+		flex-basis: 220px;
+		flex-shrink: 0;
+		.reset-btn-wrapper {
+			position: relative;
+			width: 100%;
+			button {
+				cursor: pointer;
+				display: block;
+				padding: 5px 40px;
+				margin: 0 auto;
+				margin-top: -10px;
+				border: none;
+				color: var(--blueText);
+				background-color: #ffffff !important;
+				text-decoration: underline;
+			}
+		}
+	}
+	.player-fields {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-basis: 60%;
+		padding: 0 25px;
+		flex-grow: 1;
+
+		.player-fields__player-info {
+			position: relative;
+			display: flex;
+			.names-container {
+				width: 100%;
+				.input-field-wrapper {
+					flex-basis: 47%;
+					// flex-grow: 1;
+					&#team-name {
+						flex-grow: 1;
+					}
+				}
+			}
+		}
+
+		#position {
+			flex-grow: 1;
+		}
+	}
+}
+
+.add-card__header {
+	// margin-top: 10px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	box-shadow: var(--boxShadow2);
+	border-bottom: 1px solid #ddd;
+	background: #ffffff;
+	.section-title {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		// top: 15px;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 16px;
+		margin: 0;
+	}
+	.footer-btn {
+		cursor: pointer;
+		border: none;
+		border-radius: 4px;
+		display: flex;
+		align-items: center;
+		svg {
+			height: 12px;
+		}
+
+		&.next-btn {
+			padding: 8px 15px;
+			background-color: #ffffff;
+			// color: var(--mlbBlue);
+			// border: 1px solid var(--mlbBlue);
+			color: var(--blueText);
+			border: 1px solid var(--blueText);
+			transition: 150ms;
+			&:hover {
+				background-color: var(--mlbBlueHover);
+				color: #ffffff;
+			}
+
+			svg {
+				margin-left: 4px;
+				transform: rotate(-90deg);
+			}
+		}
+
+		&.finish {
+			color: #ffffff;
+			background-color: var(--mlbBlue) !important;
+		}
+
+		&.back-btn {
+			color: var(--blueText);
+			background-color: #ffffff !important;
+			svg {
+				margin-right: 4px;
+				transform: rotate(90deg);
+			}
+		}
+	}
+	.submit-card-button {
+		position: relative;
+		// width: 100%;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.add-card-container {
+		padding-top: 70px;
+		.card-preview {
+			flex-basis: 200px;
+		}
+
+		.baseball-card-wrapper .player-details-bar {
+			.last-name {
+				font-size: .7em;
+				line-height: 12px;
+			}
+			.first-name {
+				letter-spacing: 1px;
+				line-height: 14px;
+				font-size: 11.8px !important;
+			}
+			.position-and-team-container {
+				line-height: 2em;
+				font-size: 0.5em;
+			}
+		}
+	}
+
+	.add-card__header {
+		position: fixed;
+		z-index: 11;
+		width: 100%;
+		box-shadow: var(--boxShadowABB);
+	}
+}

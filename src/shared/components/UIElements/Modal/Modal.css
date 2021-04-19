@@ -1,0 +1,118 @@
+.modal {
+  position: fixed;
+  z-index: 100000;
+  background: white;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 95%;
+  max-width: 800px;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-transition: 480ms ease;
+  transition: 480ms ease;
+}
+
+.modal.mobile {
+  width: 430px;
+  max-height: 840px;
+}
+
+.modal .exit-btn-wrapper {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.modal .exit-btn-wrapper svg {
+  height: 20px !important;
+}
+
+.modal .modal__header {
+  background-color: var(--mlbRed);
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px;
+}
+
+.modal .modal__header h1 {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 20px;
+  margin: 0;
+}
+
+.modal .modal__header svg {
+  height: 50px;
+}
+
+.modal .modal__body {
+  position: relative;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal .modal__body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fade-in-enter {
+  opacity: 0;
+}
+
+.fade-in-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.fade-in-exit {
+  opacity: 1;
+}
+
+.fade-in-exit-active {
+  opacity: 0;
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    width: 100%;
+    position: absolute;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    top: 0;
+    left: 0;
+  }
+  .modal .modal__body {
+    height: 91vh;
+    -webkit-overflow-scrolling: touch;
+    overflow: scroll;
+  }
+  .btn-circle {
+    width: 22px !important;
+    height: 22px !important;
+  }
+}
+/*# sourceMappingURL=Modal.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,4BAA4B,CAAC;EAC5B,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,SAAS,EAAE,MAAM;EACjB,GAAG,EAAE,IAAI;EACT,YAAY,EAAE,KAAK;EACnB,cAAc,EAAE,IAAI;CAIpB;;AAVD,AAOC,4BAP2B,CAO3B,uBAAuB,CAAC;EACvB,YAAY,EAAE,IAAI;CAClB",
+    "sources": [
+        "HorizontalScroll.scss"
+    ],
+    "names": [],
+    "file": "HorizontalScroll.css"
+}

@@ -1,0 +1,195 @@
+.add-card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px 0px;
+}
+
+.add-card-container .card-preview {
+  position: relative;
+  margin: 0 auto;
+  -ms-flex-preferred-size: 220px;
+      flex-basis: 220px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.add-card-container .card-preview .reset-btn-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.add-card-container .card-preview .reset-btn-wrapper button {
+  cursor: pointer;
+  display: block;
+  padding: 5px 40px;
+  margin: 0 auto;
+  margin-top: -10px;
+  border: none;
+  color: var(--blueText);
+  background-color: #ffffff !important;
+  text-decoration: underline;
+}
+
+.add-card-container .player-fields {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+  padding: 0 25px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.add-card-container .player-fields .player-fields__player-info {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.add-card-container .player-fields .player-fields__player-info .names-container {
+  width: 100%;
+}
+
+.add-card-container .player-fields .player-fields__player-info .names-container .input-field-wrapper {
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
+}
+
+.add-card-container .player-fields .player-fields__player-info .names-container .input-field-wrapper#team-name {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.add-card-container .player-fields #position {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.add-card__header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  -webkit-box-shadow: var(--boxShadow2);
+          box-shadow: var(--boxShadow2);
+  border-bottom: 1px solid #ddd;
+  background: #ffffff;
+}
+
+.add-card__header .section-title {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+
+.add-card__header .footer-btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-card__header .footer-btn svg {
+  height: 12px;
+}
+
+.add-card__header .footer-btn.next-btn {
+  padding: 8px 15px;
+  background-color: #ffffff;
+  color: var(--blueText);
+  border: 1px solid var(--blueText);
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.add-card__header .footer-btn.next-btn:hover {
+  background-color: var(--mlbBlueHover);
+  color: #ffffff;
+}
+
+.add-card__header .footer-btn.next-btn svg {
+  margin-left: 4px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.add-card__header .footer-btn.finish {
+  color: #ffffff;
+  background-color: var(--mlbBlue) !important;
+}
+
+.add-card__header .footer-btn.back-btn {
+  color: var(--blueText);
+  background-color: #ffffff !important;
+}
+
+.add-card__header .footer-btn.back-btn svg {
+  margin-right: 4px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.add-card__header .submit-card-button {
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .add-card-container {
+    padding-top: 70px;
+  }
+  .add-card-container .card-preview {
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
+  }
+  .add-card-container .baseball-card-wrapper .player-details-bar .last-name {
+    font-size: .7em;
+    line-height: 12px;
+  }
+  .add-card-container .baseball-card-wrapper .player-details-bar .first-name {
+    letter-spacing: 1px;
+    line-height: 14px;
+    font-size: 11.8px !important;
+  }
+  .add-card-container .baseball-card-wrapper .player-details-bar .position-and-team-container {
+    line-height: 2em;
+    font-size: 0.5em;
+  }
+  .add-card__header {
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    -webkit-box-shadow: var(--boxShadowABB);
+            box-shadow: var(--boxShadowABB);
+  }
+}
+/*# sourceMappingURL=AddCardForm.css.map */

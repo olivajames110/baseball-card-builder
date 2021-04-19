@@ -1,0 +1,152 @@
+aside.side-drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100000;
+  height: 100vh;
+  width: 70%;
+  background: white;
+}
+
+aside.side-drawer .mobile-header {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+aside.side-drawer .mobile-header svg {
+  width: 50px;
+}
+
+aside.side-drawer #cross-wrapper {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+aside.side-drawer #cross-wrapper:after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background-color: #757575;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+}
+
+aside.side-drawer #cross-wrapper:before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background-color: #757575;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+}
+
+aside.side-drawer .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* justify-content: center; */
+}
+
+aside.side-drawer .nav-links li {
+  margin: 30px 0;
+  width: 120%;
+}
+
+aside.side-drawer .nav-links li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #757575;
+}
+
+aside.side-drawer .nav-links li a span {
+  font-size: 23px;
+  line-height: 1.4em;
+}
+
+aside.side-drawer .nav-links li a #logout {
+  padding: 0.2rem 1.2rem;
+}
+
+aside.side-drawer .nav-links .nav-link-icon,
+aside.side-drawer .nav-links .nav-link__active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+aside.side-drawer .nav-links .nav-link-icon svg,
+aside.side-drawer .nav-links .nav-link__active svg {
+  height: 24px;
+  margin-right: 15px;
+  max-width: 22px;
+  min-width: 18px;
+}
+
+aside.side-drawer .main-navigation__drawer-nav {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.alert-enter {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.alert-enter-active {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+.alert-exit {
+  opacity: 1;
+}
+
+.alert-exit-active {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, -webkit-transform 300ms;
+  transition: opacity 300ms, transform 300ms;
+  transition: opacity 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-link-icon {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=SideDrawer.css.map */

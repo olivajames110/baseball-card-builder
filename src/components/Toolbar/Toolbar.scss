@@ -1,0 +1,46 @@
+.toolbar-container {
+	position: relative;
+	margin-bottom: 30px;
+	.logo-wrapper {
+		position: relative;
+		width: 100%;
+		svg {
+			display: block;
+			height: 50px;
+			margin: 0 auto;
+		}
+	}
+	h1 {
+		// padding-bottom: 10px;
+		text-align: center;
+	}
+}
+
+.add-card-button-wrapper {
+	z-index: 1111;
+	display: block;
+	margin-top: 15px;
+	button {
+		margin: 0 auto;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--mlbBlue);
+		color: #ffffff;
+		border: none;
+		height: 46px;
+		width: 190px;
+		border-radius: 70px;
+		transition: 140ms;
+		&:hover {
+			background-color: #060664;
+		}
+		svg {
+			margin-left: 10px;
+			height: 15px;
+			color: #ffffff;
+			transform: rotate(45deg);
+		}
+	}
+}

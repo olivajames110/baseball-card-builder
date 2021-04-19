@@ -1,0 +1,16 @@
+.horizontal-scroll-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 12px;
+  padding-left: 1.5em;
+  padding-bottom: 15px;
+}
+
+.horizontal-scroll-container .project-item-container {
+  margin-right: 10px;
+}
+/*# sourceMappingURL=HorizontalScroll.css.map */

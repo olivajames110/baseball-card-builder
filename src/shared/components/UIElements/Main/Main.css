@@ -1,0 +1,18 @@
+main {
+  background-color: #ffffff;
+}
+
+main .main-wrapper {
+  max-width: var(--pageMaxWidth);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+main section {
+  padding: 0 1.5em;
+}
+
+main .no-padding {
+  padding: 0 !important;
+}
+/*# sourceMappingURL=Main.css.map */

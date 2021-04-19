@@ -1,0 +1,153 @@
+.team-picker-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-picker-container button {
+  outline-color: #f2f2f2;
+}
+
+.team-picker-container .leages-divisions-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.team-picker-container .leages-divisions-wrapper .btn {
+  padding: 8px 6px;
+  cursor: pointer;
+}
+
+.team-picker-container .leages-divisions-wrapper .btn:first-child {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.team-picker-container .leages-divisions-wrapper .btn:last-child {
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.team-picker-container .leagues {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.team-picker-container .leagues .btn {
+  background-color: #ffffff;
+  color: var(--blueText);
+  border: 1px solid var(--blue);
+}
+
+.team-picker-container .leagues .item-active {
+  color: var(--blueText);
+  position: relative;
+  color: #ffffff !important;
+  background-color: var(--blueText) !important;
+}
+
+.team-picker-container .division-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5px;
+}
+
+.team-picker-container .division-container .division {
+  width: 100%;
+}
+
+.team-picker-container .division-container .btn {
+  color: #333;
+  background-color: #ffffff;
+  border: none;
+}
+
+.team-picker-container .division-container .item-active:after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 2px;
+  bottom: 0;
+  background-color: var(--blueText);
+}
+
+.teams-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.teams-container .team-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
+  width: 100%;
+}
+
+.teams-container .team-wrapper span {
+  text-align: center;
+  font-size: 10px;
+  margin-top: -2px;
+}
+
+.teams-container .team-wrapper img {
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
+  -webkit-backface-visibility: hidden;
+  /* IE 9 */
+  -webkit-transform: translateZ(0);
+  /* Chrome, Safari, Opera */
+  transform: translateZ(0);
+}
+
+.teams-container .team-wrapper img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.item-active {
+  color: var(--blueText) !important;
+  position: relative;
+  font-weight: bold;
+}
+/*# sourceMappingURL=TeamPicker.css.map */

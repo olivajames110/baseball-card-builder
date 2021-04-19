@@ -1,0 +1,148 @@
+$color_1: white;
+$color_2: #979595;
+$color_3: #000;
+$color_4: #b3b3b1;
+$font_family_1: var(--h1);
+$font_family_2: var(--h2);
+$background_color_1: white;
+$background_color_2: var(--baseballCardBarColor);
+$background_color_3: var(--color-icon);
+$background_color_4: unset;
+$addCardFormNum: 80px;
+.baseball-card-wrapper {
+	border: 10px solid white;
+	position: relative;
+	display: inline-block;
+	margin: 12px;
+	// cursor: pointer;
+	// height: calc(14rem + 5rem);
+	background: black;
+	width: 100%;
+	// width: 14rem;
+	// height: 270px;
+	// width: 210px;
+	overflow: hidden;
+	background-position: center;
+	-webkit-transition: 500ms;
+	transition: 500ms;
+	-webkit-animation: cardSlide 500ms;
+	animation: cardSlide 500ms;
+	cursor: pointer;
+	-webkit-box-shadow: 0 0px 3px 2px rgba(0, 0, 0, 0.11);
+	box-shadow: 0 0px 3px 2px rgba(0, 0, 0, 0.11);
+	//Vertical stripped bar on right side of card
+	&:after {
+		content: '';
+		height: 100%;
+		// height: 88%;
+		position: absolute;
+		top: -8px;
+		right: 9px;
+		border: 4px double white;
+	}
+	img.player {
+		width: 100%;
+		-o-object-fit: cover;
+		object-fit: cover;
+		height: 100%;
+	}
+
+	.team-img-wrapper {
+		height: 100%;
+		z-index: 15000000000000;
+		position: absolute;
+		bottom: 0;
+		right: -5px;
+		// right: 0;
+		display: flex;
+		align-items: center;
+		.team-img {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+			// margin: -6px -12px -10px -15px;
+			img {
+				width: 80%;
+				// width: 35px;
+				// height: 35px;
+			}
+		}
+	}
+
+	.player-details-bar {
+		position: absolute;
+		width: 100%;
+		// width: 90%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		justify-content: space-between;
+		bottom: 10px;
+		font-size: 14px;
+		background-color: $background_color_1;
+		z-index: 10;
+		text-transform: uppercase;
+		.player-details {
+			width: 100%;
+		}
+
+		.last-name {
+			font-weight: bold;
+			// font-size: .4em;
+			// line-height: 1em;
+			font-size: 11px;
+			line-height: 12px;
+			color: $color_4;
+			z-index: 10;
+			font-family: $font_family_1;
+		}
+		.first-name {
+			padding-left: 5px;
+			font-weight: bold;
+			width: 100%;
+			// width: 89%;
+			line-height: 1.1em;
+			// font-size: .4em;
+			font-size: 11.8px;
+			font-family: $font_family_2;
+			color: $color_1;
+			letter-spacing: 2px;
+			z-index: 10;
+			// margin-top: -2.1px;
+			background-color: red;
+		}
+	}
+	.position-and-team-container {
+		color: $color_3;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		// line-height: 1em;
+		// font-size: .6em;
+
+		font-size: 7px;
+		line-height: 12px;
+		font-weight: bold;
+		.position {
+			margin-right: 7px;
+		}
+		.team-name {
+			padding-left: 7px;
+			position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				border-left: 1px solid black;
+				left: 0;
+				height: 4px;
+				top: 53%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+			}
+		}
+	}
+}

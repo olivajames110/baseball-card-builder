@@ -1,0 +1,131 @@
+.binder-container {
+	position: relative;
+	// background-color: gray;
+	// width: 100%;
+	// justify-content: center;
+	// align-items: center;
+	padding: 0 10px;
+	margin: 0 auto;
+	// margin-top: 50px;
+	display: flex;
+	height: 100%;
+	max-width: 760px;
+	.punch-hole-wrapper {
+		background-color: #dcdae5;
+		// background-color: #e4e4e4;
+		width: 30px;
+		height: 90%;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		flex-direction: column;
+		border-top-left-radius: 15px;
+		border-bottom-left-radius: 15px;
+		.punch-hole {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background-color: #ffffff;
+		}
+	}
+	.card-sleeve-container {
+		border: 1px dashed #8080805e;
+		background-color: #eeedf263;
+		// background-color: #f6f6f6;
+		display: grid;
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-left: 30px;
+
+		.card-wrapper {
+			position: relative;
+			// padding: 8px;
+			cursor: pointer;
+			height: 300px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 1px dashed #dfdde6;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: radial-gradient(circle at 118%, #fff9, #ffffff33 50%, #eeeeee57 69%, #33333317 100%);
+				z-index: 11;
+			}
+
+			&:hover .baseball-card-wrapper {
+				transform: translateY(-16px);
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.binder-card-enter {
+	transform: translate(0, 0);
+	transition: transform 1s;
+	transform: translateY(-200%);
+}
+.binder-card-enter-active {
+	transform: translateY(0);
+	transition: transform 1s;
+}
+.binder-card-exit {
+	// transform: translate(-50%, -50%);
+	transform: translateY(0);
+	transition: transform 1s;
+}
+.binder-card-exit-active {
+	transform: translateY(-200%);
+	transition: transform 1s;
+}
+
+@media only screen and (max-width: 600px) {
+	.binder-container {
+		.punch-hole-wrapper {
+			width: 20px;
+			.punch-hole {
+				width: 8px;
+				height: 8px;
+			}
+		}
+		.card-sleeve-container {
+			margin-left: 20px;
+			.card-wrapper {
+				height: 150px;
+			}
+		}
+	}
+	.baseball-card-wrapper {
+		margin: 8px;
+		border: 2px solid white;
+		.player-details-bar {
+			.last-name {
+				font-size: 6px;
+				line-height: 8px;
+			}
+			.first-name {
+				letter-spacing: 0px;
+				font-size: 7px;
+				line-height: 8px;
+				padding-left: 1px;
+			}
+			.position-and-team-container {
+				font-size: 4px;
+				line-height: 6px;
+				.team-name {
+					// padding-left: 2px;
+				}
+			}
+		}
+		.team-img-wrapper .team-img {
+			width: 25px;
+			height: 23px;
+		}
+	}
+}
